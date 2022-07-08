@@ -171,12 +171,38 @@ Product section
     color: red;
 }
 
-
-
-
-
-
-
+/*-------------------------------------------------------------------------
+Product section
+--------------------------------------------------------------------------*/
+.feature-section{
+    margin: 50px 0;
+}
+.feature-sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+}
+.feature-sections img{
+    width: 100%;
+}
+.feature-right h1{
+    font-size: 2.5em;
+}
+.feature-right p{
+    font-weight: 600;
+    color: #2a2a2a;
+}
+.feature-right a{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #E02C6D;
+    color: white;
+    font-weight: 600;
+}
+.feature-right a span{
+    margin-left: 10px;
+}
 
 
 
@@ -256,6 +282,17 @@ For mobile:
         grid-template-columns: repeat(1, 1fr);
         row-gap: 30px;
         column-gap: 30px;
+    }
+    /* feature section */
+    .feature-sections{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 60px;
+    }
+    .feature-right{
+        text-align: center;
     }
 }
 
