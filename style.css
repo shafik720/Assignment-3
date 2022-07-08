@@ -41,6 +41,7 @@ Menu Bar
 .navbar-right ul li a{
     color: #3A3A3A;
     font-size: 16px;
+    font-weight: 600;
 }
 #menu-icon{
     font-size: 24px;
@@ -185,10 +186,62 @@ For mobile:
 /*--------------------------------------------------- 
 For ipads, tablet:  
 ---------------------------------------------------*/
-@media only screen and (min-width:481px) and (max-width:768px) {}
+@media only screen and (min-width:481px) and (max-width:768px) {
+    .fixed-width{
+        width: 100%;
+        margin: auto;
+    }
+    body{
+        padding: 0 15px;
+    }
+    /* menubar */
+    .navbars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar-right ul {
+        padding-left: 0px;
+        border-bottom: 2px solid #3a3a3a8f;
+    }
+    .navbar-right ul li {
+        list-style: none;
+        margin-left: 0px;
+        margin: 10px 15px;
+    }
+
+    /* Banner section  */
+    .banner-left{
+        order: 2;
+    }
+    .banner-right{
+        order: 1;
+    }
+    .banner-sections{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-section::before {
+        background: none
+    }
+    .banner-left{
+        text-align: center;
+    }
+}
 
 /*-----------------------------------------
  For Small screen, laptop:  
 -----------------------------------------*/
-@media only screen and (min-width:769px) and (max-width:1024px) {}
+@media only screen and (min-width:769px) and (max-width:1024px) {
+    .fixed-width{
+        width: 100%;
+        margin: auto;
+    }
+    body{
+        padding: 0 15px;
+    }
+}
 
