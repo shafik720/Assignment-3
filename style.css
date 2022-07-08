@@ -171,8 +171,22 @@ Product section
     color: red;
 }
 
+.product-arrow-button{
+    text-align: right;
+    position: relative;
+}
+.product-arrow-button a{
+    display: inline-block;
+    position: absolute;
+    color: #E02C6D;
+    right: 0;
+    top: 40px;
+}
+.product-arrow-button a span{
+    margin-left: 15px;
+}
 /*-------------------------------------------------------------------------
-Product section
+Feature section
 --------------------------------------------------------------------------*/
 .feature-section{
     margin: 50px 0;
@@ -185,6 +199,10 @@ Product section
 }
 .feature-sections img{
     width: 100%;
+}
+
+.feature-right{
+    width: 60%;
 }
 .feature-right h1{
     font-size: 2.5em;
@@ -199,6 +217,7 @@ Product section
     background: #E02C6D;
     color: white;
     font-weight: 600;
+    margin: 30px 0;
 }
 .feature-right a span{
     margin-left: 10px;
@@ -283,6 +302,17 @@ For mobile:
         row-gap: 30px;
         column-gap: 30px;
     }
+    .product-arrow-button{
+        text-align: right;
+        position: relative;
+    }
+    .product-arrow-button a{
+        display: inline-block;
+        position: absolute;
+        color: #E02C6D;
+        right: 0;
+        top: 30px;
+    }
     /* feature section */
     .feature-sections{
         display: flex;
@@ -291,7 +321,8 @@ For mobile:
         align-items: center;
         column-gap: 60px;
     }
-    .feature-right{
+    .feature-right{        
+        width: 80%;
         text-align: center;
     }
 }
@@ -350,6 +381,19 @@ For ipads, tablet:
         row-gap: 30px;
         column-gap: 30px;
     }
+    /*  feature section  */
+    .feature-sections{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0px;
+        row-gap: 30px;
+    }
+    .feature-right{        
+        width: 80%;
+        text-align: center;
+    }
 }
 
 /*-----------------------------------------
@@ -362,6 +406,9 @@ For ipads, tablet:
     }
     body{
         padding: 0 25px;
+    }
+    .feature-right{
+        width: 50%;
     }
 }
 
