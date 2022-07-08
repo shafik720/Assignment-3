@@ -28,6 +28,7 @@ Menu Bar
 .navbars{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .navbar-right ul {
     display: flex;
@@ -53,24 +54,27 @@ Banner section
 
 .banner-section{
     margin: 50px 0;
+    padding: 20px 0;
 }
-.banner-section::before{
-    background: url(images/Circle\ design.svg)no-repeat;
-    content: '';
+.banner-sections{
+    padding: 40px 0;
+}
+
+.banner-right{
+    position: relative;
+}
+
+.banner-rights2{
     position: absolute;
-    width: 475px;
-    height: 475px;
-    right: 9%;
-    z-index: -1;
+    top: 10px;
 }
+
 .banner-sections{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.banner-sections img{
-    /* width: 440px;
-    height: 414px; */
+.banner-right img{
     width: 100%;
 }
 .banner-left h1{
@@ -152,7 +156,7 @@ For mobile:
     }
     .navbar-right ul {
         padding-left: 0px;
-        border-bottom: 2px solid #3a3a3a8f;
+        border-bottom: 2px solid #E02C6D;
     }
     .navbar-right ul li {
         list-style: none;
@@ -203,7 +207,7 @@ For ipads, tablet:
     }
     .navbar-right ul {
         padding-left: 0px;
-        border-bottom: 2px solid #3a3a3a8f;
+        border-bottom: 2px solid #E02C6D;
     }
     .navbar-right ul li {
         list-style: none;
@@ -241,7 +245,7 @@ For ipads, tablet:
         margin: auto;
     }
     body{
-        padding: 0 15px;
+        padding: 0 25px;
     }
 }
 
