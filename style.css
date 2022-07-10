@@ -319,6 +319,11 @@ Bonus section
     font-size: 15px;
     width: 90%;
     box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s;
+}
+.extra-form input:focus{
+    border: 2px solid #E02C6D;
 }
 
 .extra-detail-right{
