@@ -337,8 +337,11 @@ Bonus section
     color: white;
     background: #23A9F2;
     font-size: 1.5em;
+    transition: all 0.3s;
 }
-
+.extra-detail-right a:hover{
+    background: #E02C6D;
+}
 
 
 
