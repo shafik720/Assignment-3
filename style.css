@@ -54,7 +54,7 @@ Banner section
 
 .banner-section{
     margin: 50px 0;
-    padding: 20px 0;
+    padding: 20px 15px;
 }
 .banner-sections{
     padding: 40px 0;
@@ -102,6 +102,7 @@ Brand icons section
 
 .brand-section{
     margin: 50px 0;
+    padding: 0 15px;
 }
 .brand-sections{
     display: flex;
@@ -124,6 +125,7 @@ Product section
 
 .product-section{
     margin: 100px 0;
+    padding: 0 15px;
 }
 .product-section h1{
     text-align: center;
@@ -255,10 +257,82 @@ Footer section
 }
 
 
+/*-------------------------------------------------------------------------
+Bonus section
+--------------------------------------------------------------------------*/
+.extra-section{
+    margin: 50px 0;
+    position: relative;
+}
+.extra-sections{
+    position: relative;
+}
+.extra-image img{
+    width: 100%;
+}
 
 
+.extra-detail{
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(112, 109, 109, 0.5);
+    width: 70%;
+    padding: 0px 0px 30px 20px;
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+    background: white;
+    bottom: 5%;
+    left: 15%;
+}
+.extra-details{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    margin: auto;
+}
+.extra-detail-left{
+    /* border: 1px solid black; */
+    flex-grow: 4;
+}
+.extra-detail-right{
+    /* border: 1px solid black; */
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.extra-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
 
+.extra-detail-left h2{
+    margin-top: 0;
+    padding-top: 0;
+}
+.extra-form input{
+    padding: 10px 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 90%;
+    box-sizing: border-box;
+}
 
+.extra-detail-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.extra-detail-right a{
+    padding: 20px 25px ;
+    color: white;
+    background: #23A9F2;
+    font-size: 1.5em;
+}
 
 
 
@@ -281,9 +355,7 @@ For mobile:
     .hidden-for-mobile{
         display: none;
     }
-    body{
-        padding: 0 15px;
-    }
+    
     /* menubar */
     .navbars{
         display: flex;
@@ -350,6 +422,41 @@ For mobile:
         width: 80%;
         text-align: center;
     }
+    /* bonus section  */
+    .extra-detail{
+        text-align: center;
+        box-shadow: 10px 10px 15px rgba(112, 109, 109, 0.5);
+        width: 95%;
+        padding: 0px 0px 30px 20px;
+        margin: auto;
+        border-radius: 10px;
+        position: absolute;
+        background: white;
+        bottom: 5%;
+        left: 3%;
+        box-sizing: border-box;
+    }
+    .extra-details{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: stretch;
+        width: 100%;
+        margin: auto;
+    }
+    .extra-form input{
+        padding: 10px 10px;
+        border: 2px solid grey;
+        border-radius: 5px;
+        font-size: 15px;
+        width: 100%;
+    }
+    .extra-detail-right a{
+        padding: 5px 10px ;
+        color: white;
+        background: #23A9F2;
+        font-size: 1.2em;
+    }
 }
 
 /*--------------------------------------------------- 
@@ -359,9 +466,6 @@ For ipads, tablet:
     .fixed-width{
         width: 100%;
         margin: auto;
-    }
-    body{
-        padding: 0 15px;
     }
     /* menubar */
     .navbars{
@@ -429,8 +533,8 @@ For ipads, tablet:
         width: 100%;
         margin: auto;
     }
-    body{
-        padding: 0 25px;
+    .navbar{
+        padding: 0 15px;
     }
     .feature-right{
         width: 50%;
