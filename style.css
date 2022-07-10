@@ -224,10 +224,35 @@ Feature section
 }
 
 
+/*-------------------------------------------------------------------------
+Footer section
+--------------------------------------------------------------------------*/
+.footer{
+    text-align: center;
+    padding: 50px 0 ;
+    background: #0A0826;
+    color: white;
+}
 
+.footers h2{
+    color: white;
+}
 
+.footer-icon span a{
+    color: white;
+    padding: 8px 15px;
+    background: #22213C;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
 
-
+.footer-icon span a:hover{
+    background: #E02C6D;
+    color: white;
+}
 
 
 
