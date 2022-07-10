@@ -76,6 +76,10 @@ Banner section
 }
 .banner-right img{
     width: 100%;
+    transition: all 0.5s;
+}
+.banner-right img:hover{
+    transform: scale(125%);
 }
 .banner-left h1{
     font-size: 3em;
